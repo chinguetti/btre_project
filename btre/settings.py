@@ -147,3 +147,7 @@ EMAIL_HOST_USER = ''  #gmail account
 EMAIL_HOST_PASSWORD = ''  #pw
 EMAIL_USE_TLS=True
 
+try:
+    from .local_settings import *
+except ImportError:
+    pass
